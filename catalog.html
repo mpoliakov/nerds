@@ -5,6 +5,7 @@
     <title>Нёрдс</title>
   </head>
   <body>
+    <h1 class="visually-hidden">Нёрдс</h1>
     <header>
       <a href="index.html" class="logo">Нёрдс</a>
       <nav>
@@ -20,27 +21,70 @@
     <main>
       <h2>Магазин готовых шаблонов</h2>
       <section class="filter">
+        <h3 class="visually-hidden">Фильтр</h3>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="filter-category price">
+            <legend>Стоимость:</legend>
+            <div class="price-range-control">
+              <button type="button">От</button>
+              <button type="button">До</button>
+            </div>
+            <label for="filter-min-price">От</label>
+            <input id="filter-min-price" type="number" name="minprice" value="0">
+            <label for="filter-max-price">До</label>
+            <input id="filter-max-price" type="number" name="maxprice" value="15000">
+          </fieldset>
+          <fieldset class="filter-category grid">
+            <legend>Сетка:</legend>
+            <label>
+              <input type="radio" name="grid" value="Адаптивная" checked>
+              Адаптивная
+            </label>
+            <label>
+              <input type="radio" name="grid" value="Фиксированная">
+              Фиксированная
+            </label>
+            <label>
+              <input type="radio" name="grid" value="Резиновая">
+              Резиновая
+            </label>
+          </fieldset>
+          <fieldset class="filter-category features">
+            <legend>Особенности:</legend>
+            <input id="feature-slider" type="checkbox" name="slider">
+            <label for="feature-slider">Слайдер</label>
+            <input id="feature-advantages" type="checkbox" name="advantages">
+            <label for="feature-advantages">Блок преимуществ</label>
+            <input id="feature-news" type="checkbox" name="news">
+            <label for="feature-news">Новости</label>
+            <input id="feature-gallery" type="checkbox" name="gallery">
+            <label for="feature-gallery">Галерея</label>
+            <input id="feature-bucket" type="checkbox" name="bucket">
+            <label for="feature-bucket">Корзина</label>
+          </fieldset>
+          <button>Показать</button>
+        </form>
+      </section>
+      <section class="sorting">
+        <h3>Сортировать:</h3>
+        <ul class="sorting-type">
+          <li><a href="#">По цене</a></li>
+          <li><a href="#">По типу</a></li>
+          <li><a href="#">По названию</a></li>
+        </ul>
+        <ul class="sorting-order">
+          <li class="sorting-order-desc"><a href="#">По убыванию</a></li>
+          <li class="sorting-order-asc"><a href="#">По возрастанию</a></li>
+        </ul>
       </section>
       <section class="templates">
-        <div class="sorting">
-          <p>Сортировать</p>
-          <ul class="sorting-options">
-            <li class="sorting-option"><a href="">По цене</a></li>
-            <li class="sorting-option"><a href="">По типу</a></li>
-            <li class="sorting-option"><a href="">По названию</a></li>
-          </ul>
-          <ul class="sorting-order">
-            <li class="sorting-order-desc"><a href="">По убыванию</a></li>
-            <li class="sorting-order-asc"><a href="">По возрастанию</a></li>
-          </ul>
-        </div>
         <ul class="template-list">
           <li class="template-list-item">
             <img src="img/img-sedona.jpg" width="360" height="620" alt="Sedona">
             <div class="template-card">
               <a href="#">Sedona</a>
               <p>Информационный сайт  для туристов</p>
-              <button>9900 руб.</button>
+              <button type="button">9900 руб.</button>
             </div>
           </li>
           <li class="template-list-item">
@@ -48,7 +92,7 @@
             <div class="template-card">
               <a href="#">Pink App</a>
               <p>Продуктовый лендинг приложения для iOS и Android</p>
-              <button>9900 руб.</button>
+              <button type="button">9900 руб.</button>
             </div>
           </li>
           <li class="template-list-item">
@@ -56,7 +100,7 @@
             <div class="template-card">
               <a href="#">Barbershop</a>
               <p>Сайт салоны красоты. Для мужчин, да.</p>
-              <button>9900 руб.</button>
+              <button type="button">9900 руб.</button>
             </div>
           </li>
           <li class="template-list-item">
@@ -64,7 +108,7 @@
             <div class="template-card">
               <a href="#">Mishka</a>
               <p>Интернет-магазин вязаных игрушек</p>
-              <button>9900 руб.</button>
+              <button type="button">9900 руб.</button>
             </div>
           </li>
           <li class="template-list-item">
@@ -72,7 +116,7 @@
             <div class="template-card">
               <a href="#">A Plus</a>
               <p>Лендинг курсов повышения квалификации</p>
-              <button>9900 руб.</button>
+              <button type="button">9900 руб.</button>
             </div>
           </li>
           <li class="template-list-item">
@@ -80,7 +124,7 @@
             <div class="template-card">
               <a href="#">Кваст</a>
               <p>Промо-сайт производителя крафтового кваса</p>
-              <button>9900 руб.</button>
+              <button type="button">9900 руб.</button>
             </div>
           </li>
         </ul>
@@ -111,10 +155,16 @@
       </p>
     </footer>
     <div id="contact-dialog" class="modal-dialog">
-      <button class="close-btn">Закрыть</button>
+      <button type="button" class="close-btn">Закрыть</button>
       <h3>Напишите нам</h3>
-      <form class="contact-form">
-        <button type="submit">Отправить</button>
+      <form action="https://echo.htmlacademy.ru" method="post" class="contact-form">
+        <label for="contact-form-name">Ваше имя:</label>
+        <input id="contact-form-name" name="name" type="text" placeholder="Имя Фамилия">
+        <label for="contact-form-email">Ваш e-mail:</label>
+        <input id="contact-form-email" name="email" type="email" placeholder="email@example.com">
+        <label for="contact-form-message">Текст письма:</label>
+        <textarea id="contact-form-message" name="message" placeholder="В свободной форме"></textarea>
+        <button>Отправить</button>
       </form>
     </div>
   </body>

@@ -5,6 +5,7 @@
     <title>Нёрдс</title>
   </head>
   <body>
+    <h1 class="visually-hidden">Нёрдс</h1>
     <header>
       <a href="" class="logo"><img src="img/nerds-logo.svg" width="160" height="65" alt="Нёрдс"></a>
       <nav>
@@ -112,10 +113,16 @@
       </p>
     </footer>
     <div id="contact-dialog" class="modal-dialog">
-      <button class="close-btn">Закрыть</button>
+      <button type="button" class="close-btn">Закрыть</button>
       <h3>Напишите нам</h3>
-      <form class="contact-form">
-        <button type="submit">Отправить</button>
+      <form action="https://echo.htmlacademy.ru" method="post" class="contact-form">
+        <label for="contact-form-name">Ваше имя:</label>
+        <input id="contact-form-name" name="name" type="text" placeholder="Имя Фамилия">
+        <label for="contact-form-email">Ваш e-mail:</label>
+        <input id="contact-form-email" name="email" type="email" placeholder="email@example.com">
+        <label for="contact-form-message">Текст письма:</label>
+        <textarea id="contact-form-message" name="message" placeholder="В свободной форме"></textarea>
+        <button>Отправить</button>
       </form>
     </div>
   </body>
