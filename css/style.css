@@ -1,0 +1,400 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #283136;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  font: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+
+  color: #ffffff;
+  text-transform: uppercase;
+
+  text-align: center;
+  vertical-align: middle;
+
+  background-color: #db575a;
+  border: none;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #c84448;
+}
+
+.btn:active {
+  background-color: #ba3a3d;
+  opacity: 0.3;
+}
+
+.btn.btn-green {
+  background-color: #71c978;
+}
+
+.btn.btn-green:hover,
+.btn.btn-green:focus {
+  background-color: #69bb70;
+}
+
+.btn.btn-green:active {
+  background-color: #5fa866;
+}
+
+.btn.btn-yellow {
+  background-color: #e4c755;
+}
+
+.btn.btn-yellow:hover,
+.btn.btn-yellow:focus {
+  background-color: #dcb343;
+}
+
+.btn.btn-yellow:active {
+  background-color: #d5a635;
+}
+
+.btn.btn-gray {
+  background-color: #ededed;
+  color: #000000;
+}
+
+.btn.btn-gray:hover,
+.btn.btn-gray:focus {
+  background-color: #dedede;
+}
+
+.btn.btn-gray:active {
+  background-color: #d4d4d4;
+}
+
+/* Site header and navigation */
+.site-header {
+  font-size: 16px;
+  line-height: 24px;
+  color: #283136;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  background-color: #eeeeee;
+}
+
+.site-header .nerds-logo {
+  display: inline-block;
+  height: 160;
+  width: 65;
+}
+
+.nerds-logo img:hover {
+  opacity: 0.8;
+}
+
+.nerds-logo img:active {
+  opacity: 0.3;
+}
+
+.site-header a {
+  color: #000000;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.site-header a:hover,
+.site-header a:focus {
+  color: #db575a;
+}
+
+.site-header a:active {
+  color: inherit;
+  opacity: 0.3;
+}
+
+.site-navigation-item.active a {
+  border-bottom: 2px solid #db575a;
+}
+
+/* Footer */
+.social-networks {
+  list-style: none;
+}
+
+.social-network a {
+  background-color: #e0e0e0;
+}
+
+.social-network a:hover,
+.social-network a:focus {
+  background-color: #c84448;
+}
+
+.social-network a:active {
+  background-color: #ba3a3d;
+}
+
+.social-engagement {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.social-engagement span {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+/* Contact us */
+.write-to-us {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.write-to-us h3 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.modal-dialog {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.modal-dialog h3 {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.contact-form label {
+  font-weight: 700;
+}
+
+.contact-form input,
+.contact-form textarea {
+  font: inherit;
+  color: #d7dbdd;
+  font-size: 16px;
+  line-height: 18px;
+  background-color: transparent;
+  border: 2px solid #d7dbdd;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover {
+  color: #b4b7b9;
+  border-color: #b4b7b9;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  color: #000000;
+  border-color: #000000;
+}
+
+.contact-form input.invalid,
+.contact-form textarea.invalid {
+  color: #c84447;
+  border-color: #c84447;
+}
+
+/* Index page */
+.promos {
+  background-color: #eeeeee;
+}
+
+.promo-list {
+    list-style: none;
+}
+
+.promo-list-item {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.promo-list-item .tagline {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+}
+
+.promo-switcher {
+  list-style: none;
+}
+
+.service-list {
+  list-style: none;
+}
+
+.service-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.description .about-us {
+  font-size: 45px;
+  line-height: 45px;
+  font-size: 500;
+}
+
+.description b {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.indicators-values b {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+}
+
+.indicators-values sup {
+  font-size: 26px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.indicators-names {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.client-list {
+  list-style: none;
+}
+
+.client-list-item a {
+  opacity: 0.2;
+}
+
+.client-list-item a:hover,
+.client-list-item a:focus {
+  opacity: 1;
+}
+
+.client-list-item a:active {
+  opacity: 0.1;
+}
+
+/* Catalog page */
+.heading {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  text-align: center;
+  background-color: #eeeeee;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter legend,
+.sorting h3 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.filter-category.price label {
+  text-transform: uppercase;
+}
+
+.filter-category.price .price-range-control {
+  background-color: #eeeeee;
+}
+
+.filter-category.grid label,
+.filter-category.features label {
+  font-size: 16px;
+  line-height: 20px;
+  color: #283136;
+}
+
+.filter-category.grid label:hover,
+.filter-category.grid label:focus,
+.filter-category.features label:hover,
+.filter-category.features label:focus {
+  color: #000000;
+}
+
+.sorting-type,
+.sorting-order {
+  list-style: none;
+}
+
+.sorting-type a,
+.sorting-order a {
+  font: inherit;
+  color: #000000;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  opacity: 0.3;
+}
+
+.sorting-type a:hover,
+.sorting-type a:focus,
+.sorting-order a:hover,
+.sorting-order a:focus {
+  opacity: 0.6;
+}
+
+.sorting-type a:active,
+.sorting-type a:active,
+.sorting-type a.active,
+.sorting-order a.active {
+  opacity: 1;
+}
+
+/* Catalog page - Templates */
+.template-list {
+  list-style: none;
+}
+
+.template-list-item:hover {
+  box-shadow: 0px 6px 15px 0px rgba(4, 6, 6, 0.25);
+}
+
+.template-card {
+  background-color: #eeeeee;
+}
+
+.template-card a {
+  font: inherit;
+  color: #000000;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.template-card p {
+  color: #666666;
+}
+
+/* Catalog page - Pagination */
+.pagination {
+  list-style: none;
+}
+
+.page .btn-gray.active {
+  background-color: #ffffff;
+  border: 2px solid #eeeeee;
+}
