@@ -54,15 +54,15 @@
           </fieldset>
           <fieldset class="filter-category features">
             <legend>Особенности:</legend>
-            <input id="feature-slider" type="checkbox" name="slider" checked>
+            <input id="feature-slider" type="checkbox" name="slider" class="filter-category-checkbox" checked>
             <label for="feature-slider">Слайдер</label>
-            <input id="feature-advantages" type="checkbox" name="advantages">
+            <input id="feature-advantages" type="checkbox" name="advantages" class="filter-category-checkbox">
             <label for="feature-advantages">Блок преимуществ</label>
-            <input id="feature-news" type="checkbox" name="news" checked>
+            <input id="feature-news" type="checkbox" name="news" class="filter-category-checkbox" checked>
             <label for="feature-news">Новости</label>
-            <input id="feature-gallery" type="checkbox" name="gallery">
+            <input id="feature-gallery" type="checkbox" name="gallery" class="filter-category-checkbox">
             <label for="feature-gallery">Галерея</label>
-            <input id="feature-bucket" type="checkbox" name="bucket">
+            <input id="feature-bucket" type="checkbox" name="bucket" class="filter-category-checkbox">
             <label for="feature-bucket">Корзина</label>
           </fieldset>
           <button type="submit" class="btn btn-gray">Показать</button>
@@ -140,7 +140,7 @@
       </section>
       <section id="map" class="contacts">
         <div class="write-to-us">
-          <h3>Nёrds Design Studio</h3>
+          <h3 class="studio-title">Nёrds Design Studio</h3>
           191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>тел. +7 (812) 275-75-75
           <button type="button" class="btn">Напишите нам</button>
         </div>
@@ -159,7 +159,7 @@
       </p>
     </footer>
     <div id="contact-dialog" class="modal-dialog">
-      <button type="button" class="btn-close">Закрыть</button>
+      <button type="button" class="btn btn-close">Закрыть</button>
       <h3>Напишите нам</h3>
       <form action="https://echo.htmlacademy.ru" method="post" class="contact-form">
         <label for="contact-form-name">Ваше имя:</label>

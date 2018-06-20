@@ -1,12 +1,10 @@
 body {
   margin: 0;
   padding: 0;
-
   font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #283136;
-
   background-color: #ffffff;
 }
 
@@ -15,19 +13,15 @@ a {
 }
 
 .btn {
-  font: inherit;
-  font-size: 16px;
   line-height: 18px;
   font-weight: 500;
-
   color: #ffffff;
   text-transform: uppercase;
-
   text-align: center;
   vertical-align: middle;
-
   background-color: #db575a;
   border: none;
+  cursor: pointer;
 }
 
 .btn:hover,
@@ -80,34 +74,24 @@ a {
   background-color: #d4d4d4;
 }
 
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px; width: 1px;
+  margin: -1px; padding: 0; border: 0;
+}
+
 /* Site header and navigation */
 .site-header {
-  font-size: 16px;
-  line-height: 24px;
   color: #283136;
   font-weight: 500;
   text-transform: uppercase;
-
   background-color: #eeeeee;
-}
-
-.site-header .nerds-logo {
-  display: inline-block;
-  height: 160;
-  width: 65;
-}
-
-.nerds-logo img:hover {
-  opacity: 0.8;
-}
-
-.nerds-logo img:active {
-  opacity: 0.3;
 }
 
 .site-header a {
   color: #000000;
-  font-size: 16px;
   line-height: 30px;
   font-weight: 500;
 }
@@ -120,6 +104,22 @@ a {
 .site-header a:active {
   color: inherit;
   opacity: 0.3;
+}
+
+.nerds-logo {
+  display: inline-block;
+}
+
+.nerds-logo img:hover {
+  opacity: 0.8;
+}
+
+.nerds-logo img:active {
+  opacity: 0.3;
+}
+
+.site-navigation {
+  list-style: none;
 }
 
 .site-navigation-item.active a {
@@ -147,30 +147,32 @@ a {
 .social-engagement {
   font-size: 36px;
   line-height: 36px;
-  font-weight: 700;
+  font-weight: bold;
 }
 
 .social-engagement span {
-  font-size: 16px;
   line-height: 22px;
-  font-weight: 400;
+  font-weight: normal;
 }
 
 /* Contact us */
+.contacts {
+  background-color: #e9e5dc;
+  background-image: url(../img/map-with-marker.jpg);
+}
+
 .write-to-us {
-  font-size: 16px;
   line-height: 18px;
 }
 
 .write-to-us h3 {
   font-size: 18px;
   line-height: 30px;
-  font-weight: 700;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
 .modal-dialog {
-  font-size: 16px;
   line-height: 18px;
 }
 
@@ -180,14 +182,12 @@ a {
 }
 
 .contact-form label {
-  font-weight: 700;
+  font-weight: bold;
 }
 
 .contact-form input,
 .contact-form textarea {
-  font: inherit;
   color: #d7dbdd;
-  font-size: 16px;
   line-height: 18px;
   background-color: transparent;
   border: 2px solid #d7dbdd;
@@ -217,12 +217,7 @@ a {
 }
 
 .promo-list {
-    list-style: none;
-}
-
-.promo-list-item {
-  font-size: 16px;
-  line-height: 24px;
+  list-style: none;
 }
 
 .promo-list-item .tagline {
@@ -242,31 +237,32 @@ a {
 .service-item h3 {
   font-size: 24px;
   line-height: 30px;
-  font-weight: 700;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
 .description .about-us {
+  color: #000000;
   font-size: 45px;
   line-height: 45px;
-  font-size: 500;
+  font-weight: 500;
 }
 
 .description b {
-  font-weight: 700;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
 .indicators-values b {
   font-size: 45px;
   line-height: 45px;
-  font-weight: 700;
+  font-weight: bold;
 }
 
 .indicators-values sup {
   font-size: 26px;
   line-height: 26px;
-  font-weight: 700;
+  font-weight: bold;
 }
 
 .indicators-names {
@@ -308,7 +304,7 @@ a {
 .sorting h3 {
   font-size: 18px;
   line-height: 30px;
-  font-weight: 700;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
@@ -322,7 +318,6 @@ a {
 
 .filter-category.grid label,
 .filter-category.features label {
-  font-size: 16px;
   line-height: 20px;
   color: #283136;
 }
@@ -341,7 +336,6 @@ a {
 
 .sorting-type a,
 .sorting-order a {
-  font: inherit;
   color: #000000;
   font-size: 14px;
   line-height: 18px;
@@ -377,11 +371,10 @@ a {
 }
 
 .template-card a {
-  font: inherit;
   color: #000000;
   font-size: 18px;
   line-height: 30px;
-  font-weight: 700;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
