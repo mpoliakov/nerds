@@ -15,7 +15,7 @@ a {
 .btn {
   line-height: 18px;
   font-weight: 500;
-  color: #ffffff;
+  color: white;
   text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
@@ -62,7 +62,7 @@ a {
 
 .btn.btn-gray {
   background-color: #ededed;
-  color: #000000;
+  color: black;
 }
 
 .btn.btn-gray:hover,
@@ -84,14 +84,13 @@ a {
 
 /* Site header and navigation */
 .site-header {
-  color: #283136;
   font-weight: 500;
   text-transform: uppercase;
   background-color: #eeeeee;
 }
 
 .site-header a {
-  color: #000000;
+  color: black;
   line-height: 30px;
   font-weight: 500;
 }
@@ -145,12 +144,15 @@ a {
 }
 
 .social-engagement {
+  color: black;
   font-size: 36px;
   line-height: 36px;
   font-weight: bold;
 }
 
 .social-engagement span {
+  color: #666666;
+  font-size: 16px;
   line-height: 22px;
   font-weight: normal;
 }
@@ -162,10 +164,12 @@ a {
 }
 
 .write-to-us {
+  color: #666666;
   line-height: 18px;
 }
 
 .write-to-us h3 {
+  color: black;
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
@@ -177,8 +181,10 @@ a {
 }
 
 .modal-dialog h3 {
+  color: black;
   font-size: 45px;
   line-height: 45px;
+  font-weight: 500;
 }
 
 .contact-form label {
@@ -201,8 +207,8 @@ a {
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  color: #000000;
-  border-color: #000000;
+  color: black;
+  border-color: black;
 }
 
 .contact-form input.invalid,
@@ -242,7 +248,7 @@ a {
 }
 
 .description .about-us {
-  color: #000000;
+  color: black;
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
@@ -254,6 +260,7 @@ a {
 }
 
 .indicators-values b {
+  color: black;
   font-size: 45px;
   line-height: 45px;
   font-weight: bold;
@@ -289,6 +296,7 @@ a {
 
 /* Catalog page */
 .heading {
+  color: black;
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -302,6 +310,7 @@ a {
 
 .filter legend,
 .sorting h3 {
+  color: black;
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
@@ -326,7 +335,7 @@ a {
 .filter-category.grid label:focus,
 .filter-category.features label:hover,
 .filter-category.features label:focus {
-  color: #000000;
+  color: black;
 }
 
 .sorting-type,
@@ -336,7 +345,7 @@ a {
 
 .sorting-type a,
 .sorting-order a {
-  color: #000000;
+  color: black;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -371,7 +380,7 @@ a {
 }
 
 .template-card a {
-  color: #000000;
+  color: black;
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
