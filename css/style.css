@@ -165,7 +165,10 @@ a {
 
 .write-to-us {
   color: #666666;
+  background-color: white;
   line-height: 18px;
+  width: 320px;
+  height: 310px;
 }
 
 .write-to-us h3 {
