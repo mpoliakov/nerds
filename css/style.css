@@ -89,15 +89,15 @@ a {
 }
 
 /* Site header and navigation */
-.site-header-wrapper {
-  display: flex;
-  align-items: center;
-}
-
 .site-header {
   font-weight: 500;
   text-transform: uppercase;
   background-color: #eeeeee;
+}
+
+.site-header nav {
+  display: flex;
+  align-items: center;
 }
 
 .site-header a {
@@ -270,6 +270,7 @@ a {
 .promos {
   background-color: #eeeeee;
   margin-bottom: 80px;
+  height: 470px;
 }
 
 .promo-list {
@@ -294,14 +295,7 @@ a {
   padding: 0;
   margin: 0;
   display: inline-block;
-  position: relative;
-  top: -100px;
-  left: 50%;
   list-style: none;
-}
-
-.promo-switcher li {
-  display: inline-block;
 }
 
 .service-list {
@@ -398,12 +392,32 @@ a {
 
 /* Catalog page */
 .heading {
+  height: 280px;
+  background-color: #eeeeee;
+  margin-bottom: 60px;
+}
+
+.heading h2 {
+  margin: 0;
   color: black;
   font-size: 55px;
-  line-height: 55px;
+  line-height: 280px;
   font-weight: 500;
   text-align: center;
-  background-color: #eeeeee;
+}
+
+.main-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.sorting-and-templates-wrapper {
+  width: 760px;
+}
+
+.filter {
+  width: 260px;
 }
 
 .filter fieldset {
@@ -417,6 +431,12 @@ a {
   line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
+  margin: 0;
+}
+
+.price legend,
+.sorting {
+  margin-bottom: 60px;
 }
 
 .filter-category.price label {
@@ -442,6 +462,8 @@ a {
 
 .sorting-type,
 .sorting-order {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -470,7 +492,22 @@ a {
 
 /* Catalog page - Templates */
 .template-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
   list-style: none;
+}
+
+.template-list-item {
+  width: 360px;
+  height: 620px;
+  margin-right: 40px;
+  margin-bottom: 35px;
+}
+
+.template-list-item:nth-child(2n) {
+  margin-right: 0;
 }
 
 .template-list-item:hover {
@@ -479,6 +516,11 @@ a {
 
 .template-card {
   background-color: #eeeeee;
+  display: none;
+}
+
+.template-list-item:hover .template-card {
+  display: block;
 }
 
 .template-card a {
@@ -495,6 +537,8 @@ a {
 
 /* Catalog page - Pagination */
 .pagination {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
