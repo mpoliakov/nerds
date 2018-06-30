@@ -194,6 +194,7 @@ a {
   font-size: 36px;
   line-height: 48px;
   font-weight: bold;
+  margin: 0;
 }
 
 .social-engagement .discount {
@@ -201,6 +202,7 @@ a {
   font-size: 16px;
   line-height: 22px;
   font-weight: normal;
+  margin: 0;
 }
 
 /* Contact us */
