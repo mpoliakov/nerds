@@ -197,45 +197,31 @@ input[type='radio'].visually-hidden {
   list-style: none;
 }
 
-.social-networks li {
+.social-network {
   margin-right: 10px;
 }
 
-.social-network a {
-  display: inline-block;
+.social-network-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #e0e0e0;
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  font-size: 0;
-  line-height: 0;
 }
 
-.social-network a:hover,
-.social-network a:focus {
+.social-network-link:hover,
+.social-network-link:focus {
   background-color: #c84448;
 }
 
-.social-network a:active {
+.social-network-link:active {
   background-color: #ba3a3d;
 }
 
-.social-network.vk a {
-  background-image: url('../img/vk-icon.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.social-network.fb a {
-  background-image: url('../img/fb-icon.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.social-network.insta a {
-  background-image: url('../img/insta-icon.svg');
-  background-repeat: no-repeat;
-  background-position: center;
+.social-network-link:active path {
+  fill: rgba(255, 255, 255, 0.3);
 }
 
 .social-engagement {
@@ -443,7 +429,7 @@ input[type='radio'].visually-hidden {
     height: 6px;
     position: absolute;
     border-radius: 50%;
-    border: 2px solid #c2c2c2;
+    border: 2px solid red;
     top: 5px;
     left: 5px
 }
