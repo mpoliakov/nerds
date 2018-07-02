@@ -420,10 +420,32 @@ input[type='radio'].visually-hidden {
   padding: 0;
   margin: 0;
   position: absolute;
-  bottom: 90px;
+  bottom: 95px;
   left: 50%;
   margin-left: -45px;
   list-style: none;
+}
+
+.promo-switcher button {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 0;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.promo-switcher button.active::after {
+    content: '';
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid #c2c2c2;
+    top: 5px;
+    left: 5px
 }
 
 .service-list {
