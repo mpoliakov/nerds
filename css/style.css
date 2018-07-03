@@ -317,38 +317,105 @@ a.cart:active::before {
 
 .modal-dialog {
   display: none;
+  box-sizing: border-box;
+  width: 960px;
+  padding: 70px 100px 80px;
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  margin-left: -480px;
   line-height: 18px;
+  background-color: white;
+  box-shadow: 0px 5px 15px 10px rgba(4, 6, 6, 0.25);
 }
 
 .modal-dialog h3 {
+  margin: 0 0 45px;
   color: black;
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
 }
 
+.modal-dialog .btn-close {
+  position: absolute;
+  top: 70px;
+  right: 87px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+.modal-dialog .btn-close:hover,
+.modal-dialog .btn-close:focus {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.modal-dialog .btn-close:active {
+  opacity: 0.1;
+  transition: opacity 0.3s;
+}
+
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.contact-form .contact-form-input {
+  min-width: 360px;
+  margin-bottom: 30px;
+}
+
+.contact-form .contact-form-input.textarea {
+  min-width: 100%;
+  margin-bottom: 45px;
+}
+
 .contact-form label {
+  display: block;
   font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contact-form button {
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
 .contact-form input,
 .contact-form textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
   color: #d7dbdd;
   line-height: 18px;
   background-color: transparent;
   border: 2px solid #d7dbdd;
+  border-radius: 3px;
+  outline: none;
+}
+
+.contact-form textarea {
+  min-height: 120px;
 }
 
 .contact-form input:hover,
 .contact-form textarea:hover {
   color: #b4b7b9;
   border-color: #b4b7b9;
+  trasition: color 0.3s, border-color 0.3s;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
   color: black;
   border-color: black;
+  trasition: color 0.3s, border-color 0.3s;
 }
 
 .contact-form input.invalid,

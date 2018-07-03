@@ -154,15 +154,24 @@
       </div>
     </footer>
     <div id="contact-dialog" class="modal-dialog">
-      <button type="button" class="btn btn-close">Закрыть</button>
       <h3>Напишите нам</h3>
+      <button type="button" class="btn-close">
+        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/></svg>
+        <span class="visually-hidden">Закрыть</span>
+      </button>
       <form action="https://echo.htmlacademy.ru" method="post" class="contact-form">
-        <label for="contact-form-name">Ваше имя:</label>
-        <input id="contact-form-name" name="name" type="text" placeholder="Имя Фамилия">
-        <label for="contact-form-email">Ваш e-mail:</label>
-        <input id="contact-form-email" name="email" type="email" placeholder="email@example.com">
-        <label for="contact-form-message">Текст письма:</label>
-        <textarea id="contact-form-message" name="message" placeholder="В свободной форме"></textarea>
+        <div class="contact-form-input">
+          <label for="contact-form-name">Ваше имя:</label>
+          <input id="contact-form-name" name="name" type="text" placeholder="Имя Фамилия">
+        </div>
+        <div class="contact-form-input">
+          <label for="contact-form-email">Ваш e-mail:</label>
+          <input id="contact-form-email" name="email" type="email" placeholder="email@example.com">
+        </div>
+        <div class="contact-form-input textarea">
+          <label for="contact-form-message">Текст письма:</label>
+          <textarea id="contact-form-message" name="message" placeholder="В свободной форме"></textarea>
+        </div>
         <button type="submit" class="btn">Отправить</button>
       </form>
     </div>
