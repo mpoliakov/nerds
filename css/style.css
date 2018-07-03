@@ -719,13 +719,9 @@ a.cart:active::before {
   margin: 0;
 }
 
-.price legend,
+.filter-category.price legend,
 .sorting {
   margin-bottom: 60px;
-}
-
-.filter button[type='submit'] {
-  width: 100%;
 }
 
 .filter-category {
@@ -733,12 +729,90 @@ a.cart:active::before {
   margin: 0 0 50px;
 }
 
-.filter-category.price label {
+.filter-category legend {
+  margin-bottom: 20px;
+}
+
+.range-filter {
+  width: 260px;
+}
+
+.filter-item legend {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 20px;
+}
+
+.range-controls .toggle-max {
+  left: 174px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  display: inline-block;
+  width: 50%;
+  font-size: 16px;
   text-transform: uppercase;
 }
 
-.filter-category.price .price-range-control {
-  background-color: #eeeeee;
+.price-controls input {
+  width: 60px;
+  padding: 8px 10px;
+  margin-left: 10px;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #283136;
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.max-price {
+  text-align: right;
 }
 
 .filter-category.grid {
@@ -756,6 +830,21 @@ a.cart:active::before {
 .filter-category.features label:hover,
 .filter-category.features label:focus {
   color: black;
+  transition: color 0.3s;
+}
+
+.filter-category.grid label,
+.filter-category.features .checkbox-container {
+  margin-bottom: 15px;
+}
+
+.filter-category.grid label:last-child,
+.filter-category.features .checkbox-container:last-child {
+  margin-bottom: 0;
+}
+
+.filter button[type='submit'] {
+  width: 100%;
 }
 
 .sorting {

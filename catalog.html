@@ -35,14 +35,19 @@
           <form action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="filter-category price">
               <legend>Стоимость:</legend>
-              <div class="price-range-control">
-                <button type="button">От</button>
-                <button type="button">До</button>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar" style="margin-left: 0; width: 70%"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">От <input name="minprice" type="text" value="0"></label>
+                  <label class="max-price">До <input name="maxprice" type="text" value="15000"></label>
+                </div>
               </div>
-              <label for="filter-min-price">От</label>
-              <input id="filter-min-price" type="number" name="minprice" value="0">
-              <label for="filter-max-price">До</label>
-              <input id="filter-max-price" type="number" name="maxprice" value="15000">
             </fieldset>
             <fieldset class="filter-category grid">
               <legend>Сетка:</legend>
