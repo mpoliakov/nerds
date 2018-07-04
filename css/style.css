@@ -839,14 +839,17 @@ input[type='radio'].visually-hidden {
 .filter-category.grid,
 .filter-category.features {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .filter-category.grid label,
 .filter-category.features label {
-  margin-bottom: 20px;
-  line-height: 20px;
-  position: relative;
+  display: block;
+  width: 100%;
   padding-left: 35px;
+  margin-bottom: 20px;
+  position: relative;
+  line-height: 20px;
 }
 
 .filter-category.grid label:last-child,
