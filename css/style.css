@@ -146,7 +146,8 @@ input[type='radio'].visually-hidden {
   vertical-align: middle;
 }
 
-.nerds-logo img:hover {
+.nerds-logo img:hover,
+.nerds-logo img:focus {
   opacity: 0.8;
   transition: opacity 0.3s;
 }
@@ -168,6 +169,10 @@ input[type='radio'].visually-hidden {
   margin: 0 23px;
 }
 
+.site-navigation-item a {
+  outline: none;
+}
+
 .site-navigation-item.active {
   border-bottom: 2px solid #db575a;
 }
@@ -175,6 +180,7 @@ input[type='radio'].visually-hidden {
 .cart {
   position: relative;
   padding-left: 40px;
+  outline: none;
 }
 
 .cart::before {
@@ -189,16 +195,16 @@ input[type='radio'].visually-hidden {
   background-position: 0 0;
 }
 
-a.cart:active {
+.cart:active {
   opacity: 1;
 }
 
-a.cart:active span {
+.cart:active span {
   opacity: 0.3;
   transition: opacity 0.3s;
 }
 
-a.cart:active::before {
+.cart:active::before {
   opacity: 1;
 }
 
@@ -230,6 +236,7 @@ a.cart:active::before {
   width: 80px;
   height: 80px;
   border-radius: 50%;
+  outline: none;
 }
 
 .social-network-link:hover,
@@ -425,6 +432,8 @@ a.cart:active::before {
 }
 
 /* Index page */
+
+/* Index page - Slider */
 .promos {
   background-color: #eeeeee;
   margin-bottom: 80px;
@@ -444,9 +453,7 @@ a.cart:active::before {
   box-sizing: border-box;
   min-height: 420px;
   padding: 60px 0 80px;
-}
-
-.promo-list-item {
+  display: none;
   background-size: content;
   background-position: bottom right;
   background-repeat: no-repeat;
@@ -464,13 +471,8 @@ a.cart:active::before {
   background-image: url('../img/promo-slide-3.png');
 }
 
-.promo-list-item.slide-2,
-.promo-list-item.slide-3 {
-  display: none;
-}
-
 .promo-list-item .slide-content {
-  width: 40%;
+  width: 50%;
 }
 
 .promo-list-item .tagline {
@@ -489,7 +491,7 @@ a.cart:active::before {
   padding-right: 50px;
 }
 
-.promo-switcher {
+.slider-controls {
   display: flex;
   justify-content: space-between;
   width: 90px;
@@ -502,7 +504,7 @@ a.cart:active::before {
   list-style: none;
 }
 
-.promo-switcher button {
+.slider-controls-item {
   position: relative;
   width: 20px;
   height: 20px;
@@ -513,16 +515,32 @@ a.cart:active::before {
   cursor: pointer;
 }
 
-.promo-switcher button.active::after {
-    content: '';
-    width: 6px;
-    height: 6px;
-    position: absolute;
-    border-radius: 50%;
-    border: 2px solid #c2c2c2;
-    top: 5px;
-    left: 5px
+#slide-1:checked ~ .promo-list .promo-list-item.slide-1 {
+  display: block;
 }
+
+#slide-2:checked ~ .promo-list .promo-list-item.slide-2 {
+  display: block;
+}
+
+#slide-3:checked ~ .promo-list .promo-list-item.slide-3 {
+  display: block;
+}
+
+#slide-1:checked ~ .slider-controls .slider-controls-item--1::after,
+#slide-2:checked ~ .slider-controls .slider-controls-item--2::after,
+#slide-3:checked ~ .slider-controls .slider-controls-item--3::after {
+  content: '';
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid #c2c2c2;
+  top: 5px;
+  left: 5px
+}
+
+/* end of Index page - Slider */
 
 .service-list {
   padding: 0;
@@ -662,6 +680,7 @@ a.cart:active::before {
 
 .client-list-item a {
   opacity: 0.2;
+  outline: none;
 }
 
 .client-list-item a:hover,
