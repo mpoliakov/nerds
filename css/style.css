@@ -695,6 +695,8 @@ input[type='radio'].visually-hidden {
 }
 
 /* Catalog page */
+
+/* Catalog page - Filter */
 .heading {
   min-height: 280px;
   background-color: #eeeeee;
@@ -834,37 +836,83 @@ input[type='radio'].visually-hidden {
   text-align: right;
 }
 
-.filter-category.grid {
+.filter-category.grid,
+.filter-category.features {
   display: flex;
 }
 
 .filter-category.grid label,
 .filter-category.features label {
+  margin-bottom: 20px;
   line-height: 20px;
-  color: #283136;
-}
-
-.filter-category.grid label:hover,
-.filter-category.grid label:focus,
-.filter-category.features label:hover,
-.filter-category.features label:focus {
-  color: black;
-  transition: color 0.3s;
-}
-
-.filter-category.grid label,
-.filter-category.features .checkbox-container {
-  margin-bottom: 15px;
+  position: relative;
+  padding-left: 35px;
 }
 
 .filter-category.grid label:last-child,
-.filter-category.features .checkbox-container:last-child {
+.filter-category.features label:last-child {
   margin-bottom: 0;
+}
+
+.grid-radio-control input ~ span,
+.features-checkbox-control input ~ span {
+  color: #283136;
+  opacity: 0.4;
+}
+
+.grid-radio-control input:hover ~ span,
+.grid-radio-control input:focus ~ span,
+.features-checkbox-control input:hover ~ span,
+.features-checkbox-control input:focus ~ span {
+  color: black;
+  opacity: 1;
+  transition: color 0.3s, opacity 0.3s;
+}
+
+/*
+.filter-category.grid label.disabled,
+.filter-category.features label.disabled {
+  opacity: 0.1;
+}
+*/
+
+.grid-radio-control input[type='radio'] + .radio-indicator {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 0;
+  top: -3px;
+  background-image: url('../img/radio-off.svg');
+  background-position: center left;
+  background-repeat: no-repeat;
+}
+
+.grid-radio-control input[type='radio']:checked + .radio-indicator {
+  background-image: url('../img/radio-on.svg');
+}
+
+.features-checkbox-control input[type='checkbox'] + .checkbox-indicator {
+  display: inline-block;
+  width: 27px;
+  height: 23px;
+  position: absolute;
+  left: 0;
+  top: -2px;
+  background-image: url('../img/checkbox-off.svg');
+  background-position: center left;
+  background-repeat: no-repeat;
+}
+
+.features-checkbox-control input[type='checkbox']:checked + .checkbox-indicator {
+  background-image: url('../img/checkbox-on.svg');
 }
 
 .filter button[type='submit'] {
   width: 100%;
 }
+
+/* end of Catalog page - Filter */
 
 .sorting {
   display: flex;

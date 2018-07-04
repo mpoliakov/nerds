@@ -51,41 +51,49 @@
             </fieldset>
             <fieldset class="filter-category grid">
               <legend>Сетка:</legend>
-              <label>
-                <input type="radio" name="grid" value="adaptive" checked>
-                Адаптивная
+              <label class="grid-radio-control">
+                <input class="visually-hidden" type="radio" name="grid" value="adaptive" checked>
+                <span class="radio-indicator"></span>
+                <span>Адаптивная</span>
               </label>
-              <label>
-                <input type="radio" name="grid" value="fixed">
-                Фиксированная
+              <label class="grid-radio-control">
+                <input class="visually-hidden" type="radio" name="grid" value="fixed">
+                <span class="radio-indicator"></span>
+                <span>Фиксированная</span>
               </label>
-              <label>
-                <input type="radio" name="grid" value="responsive">
-                Резиновая
+              <label class="grid-radio-control">
+                <input class="visually-hidden" type="radio" name="grid" value="responsive">
+                <span class="radio-indicator"></span>
+                <span>Резиновая</span>
               </label>
             </fieldset>
             <fieldset class="filter-category features">
               <legend>Особенности:</legend>
-              <div class="checkbox-container">
-                <input id="feature-slider" type="checkbox" name="slider" checked>
-                <label for="feature-slider">Слайдер</label>
-              </div>
-              <div class="checkbox-container">
-                <input id="feature-advantages" type="checkbox" name="advantages">
-                <label for="feature-advantages">Блок преимуществ</label>
-              </div>
-              <div class="checkbox-container">
-                <input id="feature-news" type="checkbox" name="news" checked>
-                <label for="feature-news">Новости</label>
-              </div>
-              <div class="checkbox-container">
-                <input id="feature-gallery" type="checkbox" name="gallery">
-                <label for="feature-gallery">Галерея</label>
-              </div>
-              <div class="checkbox-container">
-                <input id="feature-bucket" type="checkbox" name="bucket">
-                <label for="feature-bucket">Корзина</label>
-              </div>
+              <label class="features-checkbox-control">
+                <input class="visually-hidden" type="checkbox" name="slider" checked>
+                <span class="checkbox-indicator"></span>
+                <span>Слайдер</span>
+              </label>
+              <label class="features-checkbox-control">
+                <input class="visually-hidden" type="checkbox" name="advantages">
+                <span class="checkbox-indicator"></span>
+                <span>Блок преимуществ</span>
+              </label>
+              <label class="features-checkbox-control">
+                <input class="visually-hidden" type="checkbox" name="news" checked>
+                <span class="checkbox-indicator"></span>
+                <span>Новости</span>
+              </label>
+              <label class="features-checkbox-control">
+                <input class="visually-hidden" type="checkbox" name="gallery">
+                <span class="checkbox-indicator"></span>
+                <span>Галерея</span>
+              </label>
+              <label class="features-checkbox-control">
+                <input class="visually-hidden" type="checkbox" name="bucket">
+                <span class="checkbox-indicator"></span>
+                <span>Корзина</span>
+              </label>
             </fieldset>
             <button type="submit" class="btn btn-gray">Показать</button>
           </form>
