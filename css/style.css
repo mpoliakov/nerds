@@ -263,7 +263,7 @@ input[type='radio'].visually-hidden {
   font-size: 36px;
   line-height: 48px;
   font-weight: bold;
-  margin: 0;
+  margin: 0 0 5px;
 }
 
 .social-engagement .discount {
@@ -716,16 +716,18 @@ input[type='radio'].visually-hidden {
 
 /* Catalog page - Filter */
 .heading {
-  min-height: 280px;
+  display: flex;
+  align-items: center;
+  padding-top: 55px;
+  padding-bottom: 110px;
   background-color: #eeeeee;
-  margin-bottom: 60px;
 }
 
 .heading h2 {
   margin: 0;
   color: black;
   font-size: 55px;
-  line-height: 280px;
+  line-height: 55px;
   font-weight: 500;
   text-align: center;
 }
@@ -733,6 +735,7 @@ input[type='radio'].visually-hidden {
 .main-content-wrapper {
   display: flex;
   justify-content: space-between;
+  padding-top: 55px;
   margin-bottom: 60px;
 }
 
@@ -760,7 +763,7 @@ input[type='radio'].visually-hidden {
 
 .filter-category.price legend,
 .sorting {
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .filter-category {
@@ -769,7 +772,7 @@ input[type='radio'].visually-hidden {
 }
 
 .filter-category legend {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .range-filter {
@@ -948,7 +951,7 @@ input[type='radio'].visually-hidden {
   margin: 0;
   list-style: none;
   display: flex;
-  margin-left: 50px;
+  margin-left: 35px;
 }
 
 .sorting-type li {
@@ -1057,7 +1060,7 @@ input[type='radio'].visually-hidden {
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 30px 40px 40px;
+  padding: 25px 40px 50px;
   background-color: #eeeeee;
   text-align: center;
 }
@@ -1071,13 +1074,14 @@ input[type='radio'].visually-hidden {
 }
 
 .template-card p {
-  margin: 20px 0;
+  margin: 15px 0 25px;
   color: #666666;
+  line-height: 18px;
 }
 
 .template-card .btn {
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 /* Catalog page - Pagination */
