@@ -869,12 +869,10 @@ input[type='radio'].visually-hidden {
   transition: color 0.3s, opacity 0.3s;
 }
 
-/*
-.filter-category.grid label.disabled,
-.filter-category.features label.disabled {
+.grid-radio-control input:disabled ~ span,
+.features-checkbox-control input:disabled ~ span, {
   opacity: 0.1;
 }
-*/
 
 .grid-radio-control input[type='radio'] + .radio-indicator {
   display: inline-block;
