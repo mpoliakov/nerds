@@ -871,6 +871,7 @@ input[type='radio'].visually-hidden {
   margin-bottom: 20px;
   position: relative;
   line-height: 20px;
+  cursor: pointer;
 }
 
 .filter-category.grid label:last-child,
