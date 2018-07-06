@@ -38,7 +38,6 @@ input[type='radio'].visually-hidden {
   color: white;
   text-transform: uppercase;
   text-align: center;
-  vertical-align: middle;
   background-color: #db575a;
   border: none;
   cursor: pointer;
@@ -559,7 +558,7 @@ input[type='radio'].visually-hidden {
   min-height: 400px;
   padding: 60px 0 80px;
   display: none;
-  background-size: content;
+  background-size: contain;
   background-position: top right 30px;
   background-repeat: no-repeat;
 }
@@ -985,7 +984,7 @@ input[type='radio'].visually-hidden {
 }
 
 .range-controls .toggle-max {
-  left: 174px;
+  left: 160px;
 }
 
 .price-controls {

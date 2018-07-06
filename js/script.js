@@ -2,7 +2,7 @@ var btn = document.querySelector('.btn-write-to-us');
 var modal = document.querySelector('#contact-dialog');
 var btnClose = modal.querySelector('.btn-close');
 
-var form = modal.querySelector('.contact-form')
+var form = modal.querySelector('.contact-form');
 var nameField = form.querySelector('#contact-form-name');
 var emailField = form.querySelector('#contact-form-email');
 var messageField = form.querySelector('#contact-form-message');
