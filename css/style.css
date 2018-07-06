@@ -281,6 +281,7 @@ input[type='radio'].visually-hidden {
   background-image: url(../img/map-with-marker.jpg);
   background-position: center;
   background-size: cover;
+  position: relative;
 }
 
 .contacts-wrapper {
@@ -288,10 +289,22 @@ input[type='radio'].visually-hidden {
   padding-bottom: 55px;
 }
 
+.contacts-map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-width: 1200px;
+  height: 100%;
+  z-index: 1000;
+}
+
 .write-to-us {
   box-sizing: border-box;
   width: 320px;
   padding: 50px;
+  position: relative;
+  z-index: 1001;
   color: #666666;
   background-color: white;
   line-height: 18px;
