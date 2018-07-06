@@ -791,7 +791,7 @@ input[type='radio'].visually-hidden {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 65px 0;
+  padding: 0;
   margin: 0 0 80px;
   list-style: none;
   border-top: 2px solid #eeeeee;
@@ -801,17 +801,33 @@ input[type='radio'].visually-hidden {
 .client-list-item {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 25%;
+  width: 280px;
   height: 50px;
+  margin: 65px 0;
   border-right: 2px solid #eeeeee;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.client-list-item.borodinski,
+.client-list-item.pink {
+  width: 300px;  
+}
+
+.client-list-item.htmlacademy a {
+  margin: 15px 15px 0 0;
+}
+
+.client-list-item.mishka a {
+  margin: 15px 0 0 15px;
 }
 
 .client-list-item:nth-child(4n),
