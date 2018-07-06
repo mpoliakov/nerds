@@ -21,21 +21,21 @@ try {
 btn.addEventListener('click', function(e) {
 	e.preventDefault();
 	modal.classList.add('modal-show');
-
-    if (!nameStorage && !emailStorage) {
-    	nameField.focus();
-    	return;
-    }	
     
     if (nameStorage) {
     	nameField.value = nameStorage;
+    }
 
-    	if (!emailStorage) {
-    		emailField.focus();
-    	} else {
-		    emailField.value = emailStorage;
-      		messageField.focus();		
-    	}
+    if (emailStorage) {
+    	emailField.value = emailStorage;
+    }
+
+    if (!nameField.value) {
+    	nameField.focus();
+    } else if (!emailField.value) {
+    	emailField.focus();
+    } else {
+    	messageField.focus();
     }
 });
 
