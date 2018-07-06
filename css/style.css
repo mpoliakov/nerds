@@ -48,8 +48,8 @@ input[type='radio'].visually-hidden {
   background-color: #c84448;
   outline: none;
   -webkit-transition: background-color 0.3s;
-  -o-transition: background-color 0.3s;
-  transition: background-color 0.3s;
+       -o-transition: background-color 0.3s;
+          transition: background-color 0.3s;
 }
 
 .btn:active {
@@ -59,10 +59,10 @@ input[type='radio'].visually-hidden {
           box-shadow: inset 0px 2px 1px #c13135;
   outline: none;
   -webkit-transition: background-color 0.3s, color 0.3s, -webkit-box-shadow 0.3s;
-  transition: background-color 0.3s, color 0.3s, -webkit-box-shadow 0.3s;
-  -o-transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
-  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
-  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, -webkit-box-shadow 0.3s;
+          transition: background-color 0.3s, color 0.3s, -webkit-box-shadow 0.3s;
+       -o-transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+          transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+          transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, -webkit-box-shadow 0.3s;
 }
 
 .btn.btn-green {
@@ -148,16 +148,16 @@ input[type='radio'].visually-hidden {
 .site-header a:focus {
   color: #db575a;
   -webkit-transition: color 0.3s;
-  -o-transition: color 0.3s;
-  transition: color 0.3s;
+       -o-transition: color 0.3s;
+          transition: color 0.3s;
 }
 
 .site-header a:active {
   color: inherit;
   opacity: 0.3;
   -webkit-transition: color 0.3s, opacity 0.3s;
-  -o-transition: color 0.3s, opacity 0.3s;
-  transition: color 0.3s, opacity 0.3s;
+       -o-transition: color 0.3s, opacity 0.3s;
+          transition: color 0.3s, opacity 0.3s;
 }
 
 .nerds-logo {
@@ -169,15 +169,15 @@ input[type='radio'].visually-hidden {
 .nerds-logo img:focus {
   opacity: 0.8;
   -webkit-transition: opacity 0.3s;
-  -o-transition: opacity 0.3s;
-  transition: opacity 0.3s;
+       -o-transition: opacity 0.3s;
+          transition: opacity 0.3s;
 }
 
 .nerds-logo img:active {
   opacity: 0.3;
   -webkit-transition: opacity 0.3s;
-  -o-transition: opacity 0.3s;
-  transition: opacity 0.3s;
+       -o-transition: opacity 0.3s;
+          transition: opacity 0.3s;
 }
 
 .site-navigation {
@@ -230,8 +230,8 @@ input[type='radio'].visually-hidden {
 .cart:active span {
   opacity: 0.3;
   -webkit-transition: opacity 0.3s;
-  -o-transition: opacity 0.3s;
-  transition: opacity 0.3s;
+       -o-transition: opacity 0.3s;
+          transition: opacity 0.3s;
 }
 
 .cart:active::before {
@@ -282,22 +282,22 @@ input[type='radio'].visually-hidden {
 .social-network-link:focus {
   background-color: #c84448;
   -webkit-transition: background-color 0.3s;
-  -o-transition: background-color 0.3s;
-  transition: background-color 0.3s;
+       -o-transition: background-color 0.3s;
+          transition: background-color 0.3s;
 }
 
 .social-network-link:active {
   background-color: #ba3a3d;
   -webkit-transition: background-color 0.3s;
-  -o-transition: background-color 0.3s;
-  transition: background-color 0.3s;
+       -o-transition: background-color 0.3s;
+          transition: background-color 0.3s;
 }
 
 .social-network-link:active path {
   fill: rgba(255, 255, 255, 0.3);
   -webkit-transition: fill 0.3s;
-  -o-transition: fill 0.3s;
-  transition: fill 0.3s;
+       -o-transition: fill 0.3s;
+          transition: fill 0.3s;
 }
 
 .social-engagement {
@@ -342,6 +342,7 @@ input[type='radio'].visually-hidden {
   min-width: 1200px;
   height: 100%;
   z-index: 1000;
+  border: none;
 }
 
 .write-to-us {
@@ -388,13 +389,38 @@ input[type='radio'].visually-hidden {
   width: 960px;
   padding: 70px 100px 80px;
   position: fixed;
-  top: 30%;
+  z-index: 9999;
+  top: 10%;
   left: 50%;
   margin-left: -480px;
   line-height: 18px;
   background-color: white;
   -webkit-box-shadow: 0px 5px 15px 10px rgba(4, 6, 6, 0.25);
           box-shadow: 0px 5px 15px 10px rgba(4, 6, 6, 0.25);
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(2000px);
+  }
+
+  70% {
+    transform: translateY(-30px);
+  }
+
+  90% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.modal-dialog.modal-show {
+  display: block;
+  -webkit-animation: bounce 0.6s;
+          animation: bounce 0.6s;
 }
 
 .modal-dialog h3 {
@@ -420,15 +446,15 @@ input[type='radio'].visually-hidden {
 .modal-dialog .btn-close:focus {
   opacity: 1;
   -webkit-transition: opacity 0.3s;
-  -o-transition: opacity 0.3s;
-  transition: opacity 0.3s;
+       -o-transition: opacity 0.3s;
+          transition: opacity 0.3s;
 }
 
 .modal-dialog .btn-close:active {
   opacity: 0.1;
   -webkit-transition: opacity 0.3s;
-  -o-transition: opacity 0.3s;
-  transition: opacity 0.3s;
+       -o-transition: opacity 0.3s;
+          transition: opacity 0.3s;
 }
 
 .contact-form {
@@ -486,14 +512,18 @@ input[type='radio'].visually-hidden {
 .contact-form textarea:hover {
   color: #b4b7b9;
   border-color: #b4b7b9;
-  trasition: color 0.3s, border-color 0.3s;
+  -webkit-transition: color 0.3s, border-color 0.3s;
+       -o-transition: color 0.3s, border-color 0.3s;
+          transition: color 0.3s, border-color 0.3s;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
   color: black;
   border-color: black;
-  trasition: color 0.3s, border-color 0.3s;
+  -webkit-transition: color 0.3s, border-color 0.3s;
+       -o-transition: color 0.3s, border-color 0.3s;
+          transition: color 0.3s, border-color 0.3s;
 }
 
 .contact-form input.invalid,
@@ -798,15 +828,15 @@ input[type='radio'].visually-hidden {
 .client-list-item a:focus {
   opacity: 1;
   -webkit-transition: opacity 0.3s;
-  -o-transition: opacity 0.3s;
-  transition: opacity 0.3s;
+       -o-transition: opacity 0.3s;
+          transition: opacity 0.3s;
 }
 
 .client-list-item a:active {
   opacity: 0.1;
   -webkit-transition: opacity 0.3s;
-  -o-transition: opacity 0.3s;
-  transition: opacity 0.3s;
+       -o-transition: opacity 0.3s;
+          transition: opacity 0.3s;
 }
 
 /* Catalog page */
@@ -1005,8 +1035,8 @@ input[type='radio'].visually-hidden {
   color: black;
   opacity: 1;
   -webkit-transition: color 0.3s, opacity 0.3s;
-  -o-transition: color 0.3s, opacity 0.3s;
-  transition: color 0.3s, opacity 0.3s;
+       -o-transition: color 0.3s, opacity 0.3s;
+          transition: color 0.3s, opacity 0.3s;
 }
 
 .grid-radio-control input:disabled ~ span,
@@ -1161,10 +1191,10 @@ input[type='radio'].visually-hidden {
   -webkit-box-shadow: 0px 6px 15px 0px rgba(4, 6, 6, 0.25);
           box-shadow: 0px 6px 15px 0px rgba(4, 6, 6, 0.25);
   -webkit-transition: -webkit-box-shadow 0.3s;
-  transition: -webkit-box-shadow 0.3s;
-  -o-transition: box-shadow 0.3s;
-  transition: box-shadow 0.3s;
-  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+          transition: -webkit-box-shadow 0.3s;
+       -o-transition: box-shadow 0.3s;
+          transition: box-shadow 0.3s;
+          transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
 }
 
 .template-list-item svg,
@@ -1175,8 +1205,8 @@ input[type='radio'].visually-hidden {
 .template-list-item:hover .template-card {
   display: block;
   -webkit-transition: display 0.3s;
-  -o-transition: display 0.3s;
-  transition: display 0.3s;
+       -o-transition: display 0.3s;
+          transition: display 0.3s;
 }
 
 .template-list-item svg {
@@ -1186,8 +1216,8 @@ input[type='radio'].visually-hidden {
 .template-list-item:hover svg {
   opacity: 1;
   -webkit-transition: opacity 0.3s;
-  -o-transition: opacity 0.3s;
-  transition: opacity 0.3s;
+       -o-transition: opacity 0.3s;
+          transition: opacity 0.3s;
 }
 
 .template-card {
