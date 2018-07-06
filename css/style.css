@@ -380,6 +380,8 @@ input[type='radio'].visually-hidden {
 }
 
 .write-to-us .btn {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 100%;
 }
 
