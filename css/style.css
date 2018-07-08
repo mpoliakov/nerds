@@ -291,6 +291,8 @@ input[type='radio'].visually-hidden {
   -webkit-transition: background-color 0.3s;
        -o-transition: background-color 0.3s;
           transition: background-color 0.3s;
+  -webkit-box-shadow: inset 0px 2px 1px #c13135;
+          box-shadow: inset 0px 2px 1px #c13135;
 }
 
 .social-network-link:active path {
@@ -696,6 +698,7 @@ input[type='radio'].visually-hidden {
 
 .description-services {
   width: 660px;
+  margin-right: auto;
 }
 
 .description-services ul {
@@ -800,12 +803,8 @@ input[type='radio'].visually-hidden {
 }
 
 .client-list-item {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   width: 280px;
-  height: 50px;
-  margin: 65px 0;
-  border-right: 2px solid #eeeeee;
+  min-height: 180px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -816,6 +815,23 @@ input[type='radio'].visually-hidden {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+}
+
+.client-list-item::after {
+  display: block;
+  content: '';
+  height: 50px;
+  border-right: 2px solid #eeeeee;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -25px;
+}
+
+.client-list-item:nth-child(4n)::after,
+.client-list-item:last-child::after {
+  display: none;
 }
 
 .client-list-item.borodinski,
@@ -829,11 +845,6 @@ input[type='radio'].visually-hidden {
 
 .client-list-item.mishka a {
   margin: 15px 0 0 15px;
-}
-
-.client-list-item:nth-child(4n),
-.client-list-item:last-child {
-  border-right: none;
 }
 
 .client-list-item a {
@@ -1042,7 +1053,7 @@ input[type='radio'].visually-hidden {
 
 .grid-radio-control input ~ span,
 .features-checkbox-control input ~ span {
-  color: #283136;
+  color: black;
   opacity: 0.4;
 }
 
@@ -1050,11 +1061,10 @@ input[type='radio'].visually-hidden {
 .grid-radio-control input:focus ~ span,
 .features-checkbox-control input:hover ~ span,
 .features-checkbox-control input:focus ~ span {
-  color: black;
   opacity: 1;
-  -webkit-transition: color 0.3s, opacity 0.3s;
-       -o-transition: color 0.3s, opacity 0.3s;
-          transition: color 0.3s, opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+       -o-transition: opacity 0.3s;
+          transition: opacity 0.3s;
 }
 
 .grid-radio-control input:disabled ~ span,
@@ -1121,6 +1131,8 @@ input[type='radio'].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-left: 35px;
 }
 
@@ -1205,7 +1217,8 @@ input[type='radio'].visually-hidden {
   margin: 0 20px 32px;
 }
 
-.template-list-item:hover {
+.template-list-item:hover,
+.template-list-item:focus {
   -webkit-box-shadow: 0px 6px 15px 0px rgba(4, 6, 6, 0.25);
           box-shadow: 0px 6px 15px 0px rgba(4, 6, 6, 0.25);
   -webkit-transition: -webkit-box-shadow 0.3s;
@@ -1220,18 +1233,20 @@ input[type='radio'].visually-hidden {
   display: block;
 }
 
-.template-list-item:hover .template-card {
-  display: block;
-  -webkit-transition: display 0.3s;
-       -o-transition: display 0.3s;
-          transition: display 0.3s;
+.template-list-item:hover .template-card,
+.template-list-item:focus .template-card {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s;
+       -o-transition: opacity 0.3s;
+          transition: opacity 0.3s;
 }
 
 .template-list-item svg {
   opacity: 0.12;
 }
 
-.template-list-item:hover svg {
+.template-list-item:hover svg,
+.template-list-item:focus svg {
   opacity: 1;
   -webkit-transition: opacity 0.3s;
        -o-transition: opacity 0.3s;
@@ -1239,12 +1254,12 @@ input[type='radio'].visually-hidden {
 }
 
 .template-card {
-  display: none;
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   padding: 25px 40px 50px;
+  opacity: 0;
   background-color: #eeeeee;
   text-align: center;
 }
