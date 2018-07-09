@@ -280,14 +280,14 @@ input[type='radio'].visually-hidden {
 
 .social-network-link:hover,
 .social-network-link:focus {
-  background-color: #c84448;
+  background-color: #e74246;
   -webkit-transition: background-color 0.3s;
        -o-transition: background-color 0.3s;
           transition: background-color 0.3s;
 }
 
 .social-network-link:active {
-  background-color: #ba3a3d;
+  background-color: #d7373b;
   -webkit-transition: background-color 0.3s;
        -o-transition: background-color 0.3s;
           transition: background-color 0.3s;
